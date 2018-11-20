@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class HelloEdpService {
 
-    private static final String HELLO_WORLD = "Hello World!";
+    private static final String HELLO_WORLD = "Hello World";
 
     public String getHelloWorld() {
         return HELLO_WORLD;

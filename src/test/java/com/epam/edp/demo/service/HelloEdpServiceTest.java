@@ -22,7 +22,7 @@ public class HelloEdpServiceTest {
 
     @Test
     public void testGetHelloWorldThenGetHelloWorld() {
-        String expected = "Hello World!";
+        String expected = "Hello World";
         assertThat(edpService.getHelloWorld(), is(expected));
     }
 
