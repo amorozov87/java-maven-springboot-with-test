@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: Compile@3
+- task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'compile'
@@ -21,7 +21,7 @@ steps:
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
 
-- task: Test@3
+- task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'test'
